@@ -37,3 +37,32 @@ $ python main.py
 ```
 
 4. Access pgAdmin at http://localhost:8888/browser/ to run your SQL queries and analyze the data. Refer to `compose.yaml` file to find the credentials to access both the pgAdmin and connect to the Postgre database.
+
+# Task 3
+1. Create the virtual environment for Python and install dependencies:
+```shell
+$ cd task2
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+```
+
+2. Run PostgreSQL and pgAdmin 4 using Docker Compose:
+```shell
+$ docker compose up
+```
+
+3. Run the Python script to populate the empty database with data:
+```shell
+$ python main.py
+```
+
+4. Access pgAdmin at http://localhost:8888/browser/ to run your SQL queries and analyze the data. Refer to `compose.yaml` file to find the credentials to access both the pgAdmin and connect to the Postgre database.
+
+5. (Optional) The datasets are also uploaded to MongoDB which can also be used to analyze them. 
+
+# Notes
+
+The diagrams for each task:
+
+![diagrams](./diagrams.png)
